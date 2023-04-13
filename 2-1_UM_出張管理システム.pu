@@ -1,0 +1,23 @@
+@startuml 出張管理
+left to right direction
+actor 申請者#Red;line:black;line.bold;
+actor 承認者#Green;line:black;line.bold;
+actor 経理担当者#Yellow;line:black;line.bold;
+actor 交通費精算システム#Pink;line:black;line.bold;
+rectangle 出張管理システム{
+    usecase 出張申請を登録する
+    usecase 出張申請を提案する
+    usecase 出張申請を承認する
+    usecase 出張申請を却下する
+    usecase 出張申請を差し戻す
+    usecase 出張申請を確認する
+}
+申請者 --> 出張申請を登録する
+申請者 --> 出張申請を提案する
+承認者 --> 出張申請を承認する
+承認者 --> 出張申請を却下する
+承認者 --> 出張申請を差し戻す
+承認者 --> 出張申請を確認する
+経理担当者 --> 出張申請を確認する
+出張申請を登録する <-- 交通費精算システム
+
