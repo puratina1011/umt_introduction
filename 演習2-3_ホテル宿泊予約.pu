@@ -1,0 +1,9 @@
+@startuml 課題2-3
+rectangle ホテル宿泊予約{
+actor 利用者
+usecase ログイン#Red
+usecase 予約#Pink
+}
+利用者-->予約
+ログイン<.予約:<<include>>
+@enduml
