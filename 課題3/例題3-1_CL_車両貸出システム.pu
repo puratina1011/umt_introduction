@@ -15,7 +15,7 @@ class 顧客 {
     -郵便番号:String
     -住所:String
     ---
-    +aetName(氏名:string)void
+    +setName(氏名:string)void
 }
 class 予約 {
 - 予約番号:string
