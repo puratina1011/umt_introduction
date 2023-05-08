@@ -1,8 +1,12 @@
 @startuml 課題3-1
 left to right direction
-class 従業員{
-+ 派遣:string
-+ 契約社員:string
-+ 正社員:string
-}
+class 社員{}
+class 派遣{}
+class 契約社員{}
+class 正社員{}
+
+社員 <|-- 正社員
+社員 <|-- 派遣
+社員 <|-- 契約社員
+
 @enduml

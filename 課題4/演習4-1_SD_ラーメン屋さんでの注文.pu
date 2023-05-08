@@ -1,0 +1,15 @@
+@startuml
+actor 客 as guest
+participant ":フロント店員" as clerk
+participant ":料理人" as conter
+activate guest
+guest --> clerk:ラーメンを注文する
+activate class
+clerk --> conter:料理を指示する
+activate conter
+color --> 
+deactivate conter
+deactivate clerk
+guest <-- clerk:ラーメン
+deactivate class
+@enduml

@@ -1,0 +1,26 @@
+@startuml 課題3-2
+left to right direction
+class 利用者{
+    名前
+    住所
+    電話番号
+}
+
+class ホテル{
+    部屋
+}
+class 部屋{
+    タイプ
+    価格
+    キャンペーン
+}
+class 予約{
+    チェックイン日
+    滞在日数
+    値段
+}
+ホテル *-up- 部屋
+利用者 -down- 予約
+部屋 o-- 予約
+
+@enduml
