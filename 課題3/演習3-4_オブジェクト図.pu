@@ -1,0 +1,29 @@
+@startuml 課題3-1
+left to right direction
+object "<u>車リスト:車</u>" as kuruma1{
+車種
+}
+object "<u>車リスト:車</u>" as kuruma2{
+車種
+}
+
+object "<u>タイヤリスト:タイヤ</u>" as taiya1{
+種類= オールシーズンタイヤ
+メーカー
+サイズ
+価格
+}
+
+object "<u>タイヤリスト:タイヤ</u>" as taiya2{
+種類 = スタットレスタイヤ
+メーカー
+サイズ
+価格
+}
+
+kuruma1 -- taiya1
+kuruma1 -- taiya2
+kuruma2 -- taiya2
+
+
+@enduml

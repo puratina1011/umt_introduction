@@ -1,0 +1,24 @@
+@startuml 課題3-1
+left to right direction
+object "<u>資格リスト:資格</u>" as sikaku{
+    名称
+}
+object "<u>社員情報:情報</u>" as syain1{
+    名前:高橋洋平
+    資格:情報処理安全確保支援士
+    申請日:2020年10月21日
+}
+object "<u>社員情報:情報</u>" as syain2{
+    名前:樋口正之
+    資格:情報処理安全確保支援士
+    申請日:なし
+}
+object "<u>社員情報:情報</u>" as syain1{
+    名前:高橋洋平
+    資格:LinuC試験Level1
+    申請日:2021年3月28日
+}
+sikaku -- syain1
+sikaku -- syain2
+
+@enduml

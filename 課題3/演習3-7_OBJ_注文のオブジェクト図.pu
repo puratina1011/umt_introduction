@@ -1,0 +1,55 @@
+@startuml 課題3-1
+left to right direction
+object "<u>注文リスト:注文</u>" as tyuumon1{
+    注文日:11月21日
+    数量:2個
+}
+object "<u>注文リスト:注文</u>" as tyuumon2{
+    注文日:11月21日
+    数量:1個
+}
+object "<u>注文リスト:注文</u>" as tyuumon3{
+    注文日:12月23日
+    数量:1個
+}
+object "<u>商品リスト:商品</u>" as syouhin1{
+    商品名=テレビ
+    型式=V12345
+}
+object "<u>商品リスト:商品</u>" as syouhin2{
+        商品名=冷蔵庫
+        型式=R8765
+}
+
+object "<u>商品リスト:商品</u>" as syouhin3{
+        商品名=プロジェクタ
+        型式=P1122
+}
+
+object "<u>顧客リスト:顧客</u>" as kokyaku1{
+        氏名=髙田利恵
+        住所
+}
+
+object "<u>顧客リスト:顧客</u>" as kokyaku2{
+        氏名=大坪直之
+        住所
+}
+
+object "<u>重要顧客リスト:重要顧客</u>" as jyuuyoukokyaku1{
+        氏名=高橋洋平
+        住所
+}
+
+tyuumon1 -- syouhin1
+tyuumon2 -- syouhin2
+tyuumon3 -- syouhin2
+
+jyuuyoukokyaku1 -- tyuumon1
+
+jyuuyoukokyaku1 -- tyuumon2
+
+kokyaku1 -- tyuumon2
+
+
+@enduml

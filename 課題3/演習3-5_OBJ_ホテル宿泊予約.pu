@@ -1,0 +1,47 @@
+@startuml 課題3-1
+left to right direction
+object "<u>ホテルリスト:ホテル</u>" as hoteru1{
+    部屋
+}
+object "<u>客室リスト:客室</u>" as heya1{
+    部屋番号= 301号室
+    客室タイプ=シングルタイプ
+    価格= 11000円
+    キャンペーン価格=9000円
+}
+object "<u>客室リスト:客室</u>" as heya2{
+    部屋番号= 302号室
+    客室タイプ=シングルタイプ
+    価格= 11000円
+    キャンペーン価格=9000円
+}
+object "<u>客室リスト:客室</u>" as heya3{
+    部屋番号= 303号室
+    客室タイプ=シングルタイプ
+    価格= 11000円
+    キャンペーン価格=9000円
+}
+object "<u>予約リスト:予約</u>" as yoyaku{
+    チェックイン日= 5月3日
+    滞在日数= 二日間
+    値段
+}
+object "<u>お客さんリスト:お客</u>" as kyaku1{
+名前= Aさん
+住所
+電話番号
+}
+object "<u>お客さんリスト:お客</u>" as kyaku2{
+名前= Bさん
+住所
+電話番号
+}
+hoteru1 -- heya1
+hoteru1 -- heya2
+hoteru1 -- heya3
+hoteru1 -- yoyaku
+yoyaku -- kyaku1
+yoyaku -- kyaku2
+heya1 -- kyaku1
+heya3 -- kyaku2
+@enduml
