@@ -1,0 +1,13 @@
+@startuml 4-2
+hide footbox
+participant "利用者:ログイン" as login
+participant ":予約画面" as reservation
+activate login
+login ->> reservation: 認証要求()
+activate reservation
+reservation -> reservation: 認証()
+activate reservation
+deactivate reservation
+deactivate reservationd
+deactivate login
+@enduml
