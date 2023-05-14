@@ -1,4 +1,4 @@
-@startuml 4-3
+@startuml 4-4
 hide footbox
 actor 受注係 as owner
 participant ":注文登録画面" as boundary <<boundary>>
