@@ -1,0 +1,12 @@
+@startuml 6-5-2
+left to right direction
+actor ユーザー
+actor 左右モニター
+actor 光センサー
+rectangle ライントレーサーシステム{
+    usecase ラインの右の境界線上を進む
+}
+ユーザー -- ラインの右の教会戦場を進む
+ラインの右の境界線上を進む--光センサー
+ラインの右の境界線情を進む--左右モニター
+@enduml
